@@ -1,0 +1,10 @@
+/* FOOTER */
+.footer {
+  text-align: center;
+}
+
+.footer h3 {
+  text-transform: uppercase;
+  color: var(--color-primary);
+  font-family: var(--ff-lato);
+}

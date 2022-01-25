@@ -1,0 +1,84 @@
+/* MODELS */
+.models {
+  padding: var(--separator) 0;
+}
+
+.models-header {
+  font-size: 6rem;
+  margin-bottom: var(--separator);
+}
+
+.models-list {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 4rem;
+}
+
+.model {
+  background-color: var(--color-gray-light);
+  padding-left: 4rem;
+  color: var(--color-primary);
+  border-radius: 2rem;
+  transition-property: transform background-size;
+  transition-duration: 0.3s;
+  min-height: 20rem;
+  background-repeat: no-repeat;
+  background-position: 90% center;
+  background-size: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.model:first-of-type {
+  margin-bottom: 0;
+}
+
+.model:hover {
+  transform: scale(1.05);
+  background-size: 30rem;
+}
+
+.model h3 {
+  font-size: 2.4rem;
+}
+
+.model-price {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.model-x {
+  background-image: url(../../../img/modelo-x.svg);
+}
+
+.model-y {
+  background-image: url(../../../img/modelo-y.svg);
+}
+
+.model-z {
+  background-image: url(../../../img/modelo-z.svg);
+}
+
+/* media queries */
+@media (min-width: 768px) {
+  .model {
+    margin: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .models-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 20rem);
+  }
+  .model-z {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    background-size: 25rem;
+  }
+  .model-z h3 {
+    font-size: 4.2rem;
+  }
+}

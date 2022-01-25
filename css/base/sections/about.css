@@ -1,0 +1,105 @@
+/* ABOUT */
+.about {
+  min-height: 42rem;
+  background-position: right;
+  background-repeat: repeat, no-repeat;
+  background-size: 100%, 125rem;
+}
+
+.notavif.notwebp .about {
+  background-image: linear-gradient(
+      to bottom,
+      transparent 50%,
+      var(--color-primary) 0%
+    ),
+    url(../../../img/imagen-mujer.jpg);
+}
+
+.webp .about {
+  background-image: linear-gradient(
+      to bottom,
+      transparent 50%,
+      var(--color-primary) 0%
+    ),
+    url(../../../img/imagen-mujer.webp);
+}
+
+.avif .about {
+  background-image: linear-gradient(
+      to bottom,
+      transparent 50%,
+      var(--color-primary) 0%
+    ),
+    url(../../../img/imagen-mujer.avif);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-rows: repeat(2, 40rem);
+  row-gap: var(--separator);
+}
+
+.about-text {
+  grid-row: 2 / 3;
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-bottom: var(--separator);
+}
+
+.about-text h2 {
+  font-size: 4rem;
+}
+
+.about-text p {
+  font-size: 2rem;
+  line-height: 2;
+}
+
+/* media queries */
+@media (min-width: 768px) {
+  .about {
+    background-position: top right;
+  }
+  .notavif.notwebp .about {
+    background-image: linear-gradient(
+        to left,
+        transparent 50%,
+        var(--color-primary) 0%
+      ),
+      url(../../../img/imagen-mujer.jpg);
+  }
+  .webp .about {
+    background-image: linear-gradient(
+        to left,
+        transparent 50%,
+        var(--color-primary) 0%
+      ),
+      url(../../../img/imagen-mujer.webp);
+  }
+  .avif .about {
+    background-image: linear-gradient(
+        to left,
+        transparent 50%,
+        var(--color-primary) 0%
+      ),
+      url(../../../img/imagen-mujer.avif);
+  }
+  .about-grid {
+    grid-template-rows: unset;
+    row-gap: unset;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: var(--separator);
+    padding: calc(var(--separator) * 2) 0;
+  }
+  .about-text {
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .about {
+    background-size: 100%, 130rem;
+  }
+}

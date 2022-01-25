@@ -1,0 +1,36 @@
+/* GENERAL */
+.container {
+  max-width: 120rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.degradate {
+  color: transparent;
+  background: linear-gradient(
+    to right,
+    var(--color-primary) 0%,
+    var(--color-secondary) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.item-active {
+  background-color: var(--color-primary) !important;
+  color: var(--color-white) !important;
+}
+
+.item-active-big {
+  font-size: 6rem !important;
+}

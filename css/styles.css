@@ -1,0 +1,11 @@
+@import './global.css';
+@import './general.css';
+
+@import './base/header/header.css';
+
+@import './base/sections/specifications.css';
+@import './base/sections/about.css';
+@import './base/sections/newsletter.css';
+
+@import './base/main/models.css';
+@import './base/footer/footer.css';
